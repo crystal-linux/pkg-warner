@@ -2,13 +2,13 @@
 # Developer:  Michal S <michal[at]tar[dot]black>
 
 pkgname=pkg-warner
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="Simple package manager warner tool for distribution developers"
 arch=('x86_64')
 url="https://github.com/crystal-linux/pkg-warner"
 license=('GPL3')
-source=("git+$url?rev=v0.1.0")
+source=("git+$url?rev=v0.1.1")
 sha256sums=('SKIP')
 depends=('coreutils')
 makedepends=('cargo')
