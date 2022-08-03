@@ -10,6 +10,7 @@ url="https://github.com/crystal-linux/pkg-warner"
 license=('GPL3')
 source=("git+$url?rev=v0.1.0")
 sha256sums=('SKIP')
+depends=('coreutils')
 makedepends=('cargo')
 
 prepare() {

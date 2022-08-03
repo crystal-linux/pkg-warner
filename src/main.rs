@@ -31,13 +31,13 @@ fn main() {
     let dist = env!("PKG_WARNER_DISTRO").to_string();
 
     // If --test is specified, print the warn message and exit
-    if args.test {
+    if args.test.unwrap_or(false) {
         warn(&bin, &dist, &pman);
     }
 
     // Check if the binary is called directly by the user, if so tell them off
     if bin == "pkg-warner" {
-        if args.init {
+        if args.init.unwrap_or(false) {
             init(&pkgs, args.dest_dir);
         } else {
             crash!(

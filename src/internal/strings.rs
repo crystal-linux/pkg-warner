@@ -17,7 +17,7 @@ macro_rules! log {
 }
 
 pub fn log_fn(msg: &str) {
-    if crate::args::Args::parse().verbose {
+    if crate::args::Args::parse().verbose.unwrap_or(false) {
         eprintln!(
             "{} {}",
             SystemTime::now()
