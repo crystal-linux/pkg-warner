@@ -8,7 +8,7 @@ pkgdesc="Simple package manager warner tool for distribution developers"
 arch=('x86_64')
 url="https://github.com/crystal-linux/pkg-warner"
 license=('GPL3')
-source=("git+$url?rev=0.1.0")
+source=("git+$url?rev=v0.1.0")
 sha256sums=('SKIP')
 makedepends=('cargo')
 
@@ -23,7 +23,7 @@ build() {
     export CARGO_TARGET_DIR=target
         
     # These following envvars are Crystal-specific, please adjust for your own distro!
-    export PKG_WARNER_PACKAGES=""
+    export PKG_WARNER_PACKAGES="apt,apt-get,dnf,pkg,rpm,yum,zypper,eopkg"
     export PKG_WARNER_DISTRO="Crystal"
     export PKG_WARNER_PMAN="ame/pacman"
     
