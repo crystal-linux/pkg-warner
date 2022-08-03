@@ -1,0 +1,14 @@
+[package]
+name = "pkg-warner"
+version = "0.1.0"
+authors = ["Michal S. <michal[at]tar[dot]black>"]
+edition = "2021"
+description = "A simple, OS-agnostic package manager warner"
+repository = "https://github.com/crystal-linux/pkg-warner"
+license-file = "LICENSE"
+keywords = ["package", "manager", "warner"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "3.2.16", default-features = false, features = ["std", "derive"] }
+colored = { version = "2.0.0", default-features = false }
