@@ -1,6 +1,6 @@
 [package]
 name = "pkg-warner"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Michal S. <michal[at]tar[dot]black>"]
 edition = "2021"
 description = "A simple, OS-agnostic package manager warner"

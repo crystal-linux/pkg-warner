@@ -2,7 +2,7 @@
 # Developer:  Michal S <michal[at]tar[dot]black>
 
 pkgname=pkg-warner
-pkgver=0.1.1
+pkgver=0.1.2
 pkgrel=1
 pkgdesc="Simple package manager warner tool for distribution developers"
 arch=('x86_64')
